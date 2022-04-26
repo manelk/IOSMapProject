@@ -24,10 +24,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return MyCell
     }
     
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "MoveToDetails", sender: self.tab[indexPath.row])
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     //@IBAction func btnDidTapped(_ sender: Any) {
     //}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -35,6 +39,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // 1- First step is to connect cell with the table view
         tableView.register(UINib.init(nibName: "MyTableViewCell", bundle: nil), forCellReuseIdentifier: "MyTableViewCell")
         tableView.reloadData()
+      //  performSegue(withIdentifier: "MoveToDetails", sender: nil)
+        
+    }
+    
+    override func prepare ( for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "MoveToDetails" {
+            let destination = segue.destination as! MyPlaceDetailsViewController
+            let placeObject = sender as! MyPlaceModel
+            destination.MyPlaceModel = placeObject
+        }
     }
 
 }

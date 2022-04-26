@@ -17,6 +17,7 @@
 		501099922817FD2F0007D6F8 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501099902817FD2F0007D6F8 /* MyTableViewCell.swift */; };
 		501099932817FD2F0007D6F8 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501099912817FD2F0007D6F8 /* MyTableViewCell.xib */; };
 		50109995281810C10007D6F8 /* MyPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50109994281810C10007D6F8 /* MyPlaceModel.swift */; };
+		5010999728181DF60007D6F8 /* MyPlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5010999628181DF60007D6F8 /* MyPlaceDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		501099902817FD2F0007D6F8 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTableViewCell.swift; path = MapProject/MyTableViewCell.swift; sourceTree = "<group>"; };
 		501099912817FD2F0007D6F8 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MyTableViewCell.xib; path = MapProject/MyTableViewCell.xib; sourceTree = "<group>"; };
 		50109994281810C10007D6F8 /* MyPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceModel.swift; sourceTree = "<group>"; };
+		5010999628181DF60007D6F8 /* MyPlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		500B070E2817E0A000F91232 = {
 			isa = PBXGroup;
 			children = (
+				5010999628181DF60007D6F8 /* MyPlaceDetailsViewController.swift */,
 				50109994281810C10007D6F8 /* MyPlaceModel.swift */,
 				501099902817FD2F0007D6F8 /* MyTableViewCell.swift */,
 				501099912817FD2F0007D6F8 /* MyTableViewCell.xib */,
@@ -235,6 +238,7 @@
 				500B071F2817E0A100F91232 /* ViewController.swift in Sources */,
 				500B071B2817E0A100F91232 /* AppDelegate.swift in Sources */,
 				501099922817FD2F0007D6F8 /* MyTableViewCell.swift in Sources */,
+				5010999728181DF60007D6F8 /* MyPlaceDetailsViewController.swift in Sources */,
 				500B071D2817E0A100F91232 /* SceneDelegate.swift in Sources */,
 				50109995281810C10007D6F8 /* MyPlaceModel.swift in Sources */,
 			);
@@ -390,6 +394,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,6 +422,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
