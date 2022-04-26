@@ -16,6 +16,7 @@
 		500B072A2817E0A200F91232 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500B07282817E0A200F91232 /* LaunchScreen.storyboard */; };
 		501099922817FD2F0007D6F8 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501099902817FD2F0007D6F8 /* MyTableViewCell.swift */; };
 		501099932817FD2F0007D6F8 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501099912817FD2F0007D6F8 /* MyTableViewCell.xib */; };
+		50109995281810C10007D6F8 /* MyPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50109994281810C10007D6F8 /* MyPlaceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		500B072B2817E0A200F91232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		501099902817FD2F0007D6F8 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTableViewCell.swift; path = MapProject/MyTableViewCell.swift; sourceTree = "<group>"; };
 		501099912817FD2F0007D6F8 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MyTableViewCell.xib; path = MapProject/MyTableViewCell.xib; sourceTree = "<group>"; };
+		50109994281810C10007D6F8 /* MyPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		500B070E2817E0A000F91232 = {
 			isa = PBXGroup;
 			children = (
+				50109994281810C10007D6F8 /* MyPlaceModel.swift */,
 				501099902817FD2F0007D6F8 /* MyTableViewCell.swift */,
 				501099912817FD2F0007D6F8 /* MyTableViewCell.xib */,
 				500B073A2817E83400F91232 /* Frameworks */,
@@ -233,6 +236,7 @@
 				500B071B2817E0A100F91232 /* AppDelegate.swift in Sources */,
 				501099922817FD2F0007D6F8 /* MyTableViewCell.swift in Sources */,
 				500B071D2817E0A100F91232 /* SceneDelegate.swift in Sources */,
+				50109995281810C10007D6F8 /* MyPlaceModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
