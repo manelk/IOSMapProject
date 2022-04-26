@@ -14,6 +14,8 @@
 		500B07252817E0A100F91232 /* MapProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 500B07232817E0A100F91232 /* MapProject.xcdatamodeld */; };
 		500B07272817E0A200F91232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 500B07262817E0A200F91232 /* Assets.xcassets */; };
 		500B072A2817E0A200F91232 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500B07282817E0A200F91232 /* LaunchScreen.storyboard */; };
+		501099922817FD2F0007D6F8 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501099902817FD2F0007D6F8 /* MyTableViewCell.swift */; };
+		501099932817FD2F0007D6F8 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501099912817FD2F0007D6F8 /* MyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		500B07262817E0A200F91232 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		500B07292817E0A200F91232 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		500B072B2817E0A200F91232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		501099902817FD2F0007D6F8 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTableViewCell.swift; path = MapProject/MyTableViewCell.swift; sourceTree = "<group>"; };
+		501099912817FD2F0007D6F8 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MyTableViewCell.xib; path = MapProject/MyTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,8 @@
 		500B070E2817E0A000F91232 = {
 			isa = PBXGroup;
 			children = (
+				501099902817FD2F0007D6F8 /* MyTableViewCell.swift */,
+				501099912817FD2F0007D6F8 /* MyTableViewCell.xib */,
 				500B073A2817E83400F91232 /* Frameworks */,
 				500B07392817E82900F91232 /* Pods */,
 				500B07382817E81C00F91232 /* Products */,
@@ -209,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				500B072A2817E0A200F91232 /* LaunchScreen.storyboard in Resources */,
+				501099932817FD2F0007D6F8 /* MyTableViewCell.xib in Resources */,
 				500B07272817E0A200F91232 /* Assets.xcassets in Resources */,
 				500B07222817E0A100F91232 /* Main.storyboard in Resources */,
 			);
@@ -224,6 +231,7 @@
 				500B07252817E0A100F91232 /* MapProject.xcdatamodeld in Sources */,
 				500B071F2817E0A100F91232 /* ViewController.swift in Sources */,
 				500B071B2817E0A100F91232 /* AppDelegate.swift in Sources */,
+				501099922817FD2F0007D6F8 /* MyTableViewCell.swift in Sources */,
 				500B071D2817E0A100F91232 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
