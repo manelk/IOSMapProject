@@ -10,14 +10,17 @@
 // Others: encodable and codable
 
 import Foundation
-class MyPlaceModel : Decodable{
-    var title : String = ""
-    var category : String = ""
-    var distance : String = ""
+
+class MyPlacePoint: Decodable {
+    var lon: Double?
+    var lat: Double?
+}
+
+class MyPlaceModel :Decodable{
     
-    init(title: String, category: String, distance: String) {
-        self.title = title
-        self.category = category
-        self.distance = distance
-    }
+    var xid : String?
+    var name: String?
+    var dist: Double?
+    var kinds: String?
+    var point: MyPlacePoint?
 }

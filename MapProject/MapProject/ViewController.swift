@@ -11,21 +11,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func showLoading() {
         //TODO: show loading implementation
         print("Print")
+     
     }
     
     func getAllPlaces(listOfPlaces:[MyPlaceModel]) {
         //TODO: fetch all logic
         print("Size is:", listOfPlaces.count)
+        self.tab = listOfPlaces
+        self.tableView.reloadData()
     }
     
     func hideLoading() {
         //TODO: hide loading implementation
         print("Hide Print")
     }
-    var presenter:PlacePresenter = PlacePresenter()
-    var tab: [MyPlaceModel] = [MyPlaceModel(
-        title:"title1", category: "category1", distance: "distance1"),MyPlaceModel(
-        title:"title2", category: "category2", distance: "distance2")]
+    
+    var presenter:PlacePresenter = PlacePresenter(placeService: PlaceService())
+    var tab: [MyPlaceModel] = []
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tab.count
@@ -33,9 +35,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let MyCell = tableView.dequeueReusableCell(withIdentifier: "MyTableViewCell", for: indexPath ) as! MyTableViewCell
-        MyCell.titleLabel.text = self.tab[ indexPath.row].title
-        MyCell.categoryLabel.text = self.tab[ indexPath.row].category
-        MyCell.distanceLabel.text = self.tab[ indexPath.row].distance
+        MyCell.titleLabel.text = self.tab[ indexPath.row].name
+        MyCell.categoryLabel.text = self.tab[ indexPath.row].kinds
+        MyCell.distanceLabel.text = self.tab[ indexPath.row].dist?.description
         return MyCell
     }
     

@@ -21,8 +21,8 @@ class MyPlaceDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let MyPlaceModel = MyPlaceModel {
-            self.labelTitle.text = MyPlaceModel.title
-            self.labelCategory.text = MyPlaceModel.category
+            self.labelTitle.text = MyPlaceModel.name
+            self.labelCategory.text = MyPlaceModel.kinds
         }
     }
     
