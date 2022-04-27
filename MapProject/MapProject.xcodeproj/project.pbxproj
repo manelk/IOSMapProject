@@ -18,6 +18,7 @@
 		501099932817FD2F0007D6F8 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501099912817FD2F0007D6F8 /* MyTableViewCell.xib */; };
 		50109995281810C10007D6F8 /* MyPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50109994281810C10007D6F8 /* MyPlaceModel.swift */; };
 		5010999728181DF60007D6F8 /* MyPlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5010999628181DF60007D6F8 /* MyPlaceDetailsViewController.swift */; };
+		50F8AFEB28193941003B5545 /* PlaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F8AFEA28193941003B5545 /* PlaceDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		501099912817FD2F0007D6F8 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MyTableViewCell.xib; path = MapProject/MyTableViewCell.xib; sourceTree = "<group>"; };
 		50109994281810C10007D6F8 /* MyPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceModel.swift; sourceTree = "<group>"; };
 		5010999628181DF60007D6F8 /* MyPlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceDetailsViewController.swift; sourceTree = "<group>"; };
+		50F8AFEA28193941003B5545 /* PlaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		500B07332817E79100F91232 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				50F8AFEA28193941003B5545 /* PlaceDelegate.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				501099922817FD2F0007D6F8 /* MyTableViewCell.swift in Sources */,
 				5010999728181DF60007D6F8 /* MyPlaceDetailsViewController.swift in Sources */,
 				500B071D2817E0A100F91232 /* SceneDelegate.swift in Sources */,
+				50F8AFEB28193941003B5545 /* PlaceDelegate.swift in Sources */,
 				50109995281810C10007D6F8 /* MyPlaceModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

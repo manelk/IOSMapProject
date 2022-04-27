@@ -7,7 +7,22 @@
 
 import UIKit
 // 2- add UITableViewDataSource 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, PlaceNotifier {
+    func showLoading() {
+        //TODO: show loading implementation
+        print("Print")
+    }
+    
+    func getAllPlaces(listOfPlaces:[MyPlaceModel]) {
+        //TODO: fetch all logic
+        print("Size is:", listOfPlaces.count)
+    }
+    
+    func hideLoading() {
+        //TODO: hide loading implementation
+        print("Hide Print")
+    }
+    var presenter:PlacePresenter = PlacePresenter()
     var tab: [MyPlaceModel] = [MyPlaceModel(
         title:"title1", category: "category1", distance: "distance1"),MyPlaceModel(
         title:"title2", category: "category2", distance: "distance2")]
@@ -36,6 +51,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        self.presenter.placeNotifier = self
+        self.presenter.fetchAllPlaces()
+       // self.presenter.placeNotifier.hideLoading()
         // 1- First step is to connect cell with the table view
         tableView.register(UINib.init(nibName: "MyTableViewCell", bundle: nil), forCellReuseIdentifier: "MyTableViewCell")
         tableView.reloadData()
